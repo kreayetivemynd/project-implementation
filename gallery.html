@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Blog | Gallery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Shoe Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron text-center">
+        <h1>Gallery</h1>
+        <p>Explore our collection of stylish shoe and outfit images and submit your own!</p>
+    </header>
+
+    <!-- Image Grid -->
+    <section class="container my-4">
+        <h2 class="text-center mb-4">Featured Fits</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/M+J+ESS+HLDY+FLC+PANT.jpeg" alt="Shoe Model 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/M+J+MVP+HBR+JKT.png" alt="Shoe Model 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/M+NK+TCH+FLC+HOODIE+RI.jpeg" alt="Shoe Model 3" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/NIKE+PRO+DF+365+CROP+LS.png" alt="Shoe Model 4" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/U+NK+APEX+BUCKET+FUR+SWSH+H24.jpeg" alt="Shoe Model 5" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery/W+NSW+TCH+FLC+OS+CREW.png" alt="Shoe Model 6" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Form -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Submit Your Looks</h2>
+        <form id="gallery-form" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="invalid-feedback">Name is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="form-group">
+                <label for="shoeModel">Shoe Model</label>
+                <input type="text" class="form-control" id="shoeModel" placeholder="Nike Air Max" required>
+                <div class="invalid-feedback">Shoe model is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="3" placeholder="Describe your shoe" required></textarea>
+                <div class="invalid-feedback">Description is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">Upload Image</label>
+                <input type="file" class="form-control-file" id="imageUpload" required>
+                <div class="invalid-feedback">Please upload an image.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Display Submitted Content -->
+        <div class="mt-5">
+            <h3>Submitted Entries:</h3>
+            <ul id="submittedEntries" class="list-unstyled"></ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Shoe Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

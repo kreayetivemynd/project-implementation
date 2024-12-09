@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('/images/gallery/Sneaker\ Head\ Closet.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 3rem 0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* Blog Page Styles */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.read-more-btn {
+    cursor: pointer;
+}
+
+/* Gallery Page Styles */
+img {
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+}
+
+/* About Page Styles */
+.jumbotron {
+    background: url('/images/gallery/91870539_10157996796371217_3713636467394740224_n.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 3rem 1rem;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+}
+
+.modal-body li {
+    margin-bottom: 10px;
+}
+
+.extra-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
